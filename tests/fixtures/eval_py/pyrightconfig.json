@@ -1,0 +1,5 @@
+{
+  "include": ["pkg"],
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "basic"
+}

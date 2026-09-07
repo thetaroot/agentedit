@@ -1,0 +1,19 @@
+AgentEdit
+Copyright 2026 thetaroot (SwiftGate)
+Project home: https://github.com/thetaroot/agentedit
+
+This product includes software developed for the SwiftGate project
+(https://github.com/thetaroot/swiftgate), specifically its "skelett" code-graph
+engine. The following modules carry forward design, semantics, and in some
+cases code originally written for skelett, re-licensed here under Apache-2.0:
+
+  - extraction model and TypeScript/JavaScript symbol extraction
+  - edge kinds and signature-diff semantics used by would_break
+  - confidence-graded, structural impact traversal concepts
+
+AgentEdit is the standalone, local, open-source extraction of that engine.
+The managed, multi-tenant SwiftGate platform is a separate, proprietary
+product. This project is released independently and is not an official
+SwiftGate distribution.
+
+Built with SwiftGate.

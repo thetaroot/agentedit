@@ -1,0 +1,508 @@
+{
+  "corpus": "tests/fixtures/eval_py",
+  "cases": 25,
+  "not_applicable": 2,
+  "mutation_types": [
+    "remove-declaration",
+    "rename",
+    "add-required-param"
+  ],
+  "cases_with_breakage": 25,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 31,
+    "fp": 0,
+    "fn": 0
+  },
+  "by_mutation": {
+    "remove-declaration": {
+      "cases": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0
+    },
+    "rename": {
+      "cases": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0
+    },
+    "add-required-param": {
+      "cases": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "results": [
+    {
+      "symbol": "pkg.format.format_money",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.format.format_money",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.format.format_money",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.format.upper_first",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.format.upper_first",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.format.upper_first",
+      "kind": "function",
+      "file": "pkg/format.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.metrics.record_metric",
+      "kind": "function",
+      "file": "pkg/metrics.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.metrics.record_metric",
+      "kind": "function",
+      "file": "pkg/metrics.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.metrics.record_metric",
+      "kind": "function",
+      "file": "pkg/metrics.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.queue.Queue",
+      "kind": "class",
+      "file": "pkg/queue.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py",
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py",
+        "pkg/services.py"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.queue.Queue",
+      "kind": "class",
+      "file": "pkg/queue.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py",
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py",
+        "pkg/services.py"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.queue.drain_queue",
+      "kind": "function",
+      "file": "pkg/queue.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.queue.drain_queue",
+      "kind": "function",
+      "file": "pkg/queue.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.queue.drain_queue",
+      "kind": "function",
+      "file": "pkg/queue.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/services.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.services.enqueue_payment",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.services.enqueue_payment",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.services.enqueue_payment",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.services.process_payments",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.services.process_payments",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.services.process_payments",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.services.payment_summary",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.services.payment_summary",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.services.payment_summary",
+      "kind": "function",
+      "file": "pkg/services.py",
+      "cross": 2,
+      "broken_files": [
+        "pkg/api.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.types.Job",
+      "kind": "class",
+      "file": "pkg/types.py",
+      "cross": 3,
+      "broken_files": [
+        "pkg/api.py",
+        "pkg/queue.py",
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py",
+        "pkg/queue.py",
+        "pkg/services.py"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.types.Job",
+      "kind": "class",
+      "file": "pkg/types.py",
+      "cross": 3,
+      "broken_files": [
+        "pkg/api.py",
+        "pkg/queue.py",
+        "pkg/services.py"
+      ],
+      "predicted_files": [
+        "pkg/api.py",
+        "pkg/queue.py",
+        "pkg/services.py"
+      ],
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    }
+  ]
+}

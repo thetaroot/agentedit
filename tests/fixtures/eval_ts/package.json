@@ -1,0 +1,8 @@
+{
+  "name": "agentedit-eval-corpus",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,40 @@
+name: Release
+
+# Builds a source distribution + wheel on a version tag and attaches them to
+# the GitHub Release for that tag. Install commands are published in the README
+# (pipx/uv from the release-asset URL, or `pip install git+...@tag`).
+#
+# No PyPI publishing: the `impactmap` name on PyPI belongs to an unrelated
+# project, and releases are distributed from GitHub. PyPI is used only for the
+# tree-sitter language wheels that ship as regular dependencies.
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-attach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install build tooling
+        run: pip install build
+      - name: Build sdist + wheel
+        run: python -m build --outdir dist
+      - name: Smoke-install the wheel
+        run: |
+          python -m venv /tmp/verify
+          /tmp/verify/bin/pip install dist/*.whl
+          /tmp/verify/bin/impactmap --version
+      - name: Attach artifacts to the GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true

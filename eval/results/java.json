@@ -1,0 +1,626 @@
+{
+  "corpus": "tests/fixtures/eval_java",
+  "cases": 32,
+  "not_applicable": 4,
+  "mutation_types": [
+    "remove-declaration",
+    "rename",
+    "add-required-param"
+  ],
+  "cases_with_breakage": 32,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 34,
+    "fp": 0,
+    "fn": 0
+  },
+  "by_mutation": {
+    "remove-declaration": {
+      "cases": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+    },
+    "rename": {
+      "cases": 12,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 13,
+      "fp": 0,
+      "fn": 0
+    },
+    "add-required-param": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "results": [
+    {
+      "symbol": "app.format.MoneyFormatter",
+      "kind": "class",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 2,
+      "broken_files": [
+        "app/api/Api.java",
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java",
+        "app/service/PaymentService.java"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter",
+      "kind": "class",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 2,
+      "broken_files": [
+        "app/api/Api.java",
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java",
+        "app/service/PaymentService.java"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.formatMoney",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.formatMoney",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.formatMoney",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.upperFirst",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.upperFirst",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.format.MoneyFormatter.upperFirst",
+      "kind": "method",
+      "file": "app/format/MoneyFormatter.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.metrics.Metrics",
+      "kind": "class",
+      "file": "app/metrics/Metrics.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.metrics.Metrics",
+      "kind": "class",
+      "file": "app/metrics/Metrics.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.metrics.Metrics.record",
+      "kind": "method",
+      "file": "app/metrics/Metrics.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.metrics.Metrics.record",
+      "kind": "method",
+      "file": "app/metrics/Metrics.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.metrics.Metrics.record",
+      "kind": "method",
+      "file": "app/metrics/Metrics.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.queue.QueueOps",
+      "kind": "class",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.queue.QueueOps",
+      "kind": "class",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.queue.QueueOps.enqueue",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.queue.QueueOps.enqueue",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.queue.QueueOps.enqueue",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.queue.QueueOps.drain",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.queue.QueueOps.drain",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.queue.QueueOps.drain",
+      "kind": "method",
+      "file": "app/queue/QueueOps.java",
+      "cross": 1,
+      "broken_files": [
+        "app/service/PaymentService.java"
+      ],
+      "predicted_files": [
+        "app/service/PaymentService.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.service.PaymentService",
+      "kind": "class",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.service.PaymentService",
+      "kind": "class",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.service.PaymentService.enqueuePayment",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.service.PaymentService.enqueuePayment",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.service.PaymentService.enqueuePayment",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.service.PaymentService.processPayments",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.service.PaymentService.processPayments",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.service.PaymentService.processPayments",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "app.service.PaymentService.paymentSummary",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "app.service.PaymentService.paymentSummary",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "app.service.PaymentService.paymentSummary",
+      "kind": "method",
+      "file": "app/service/PaymentService.java",
+      "cross": 1,
+      "broken_files": [
+        "app/api/Api.java"
+      ],
+      "predicted_files": [
+        "app/api/Api.java"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    }
+  ]
+}

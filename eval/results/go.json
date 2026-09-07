@@ -1,0 +1,478 @@
+{
+  "corpus": "tests/fixtures/eval_go",
+  "cases": 24,
+  "not_applicable": 0,
+  "mutation_types": [
+    "remove-declaration",
+    "rename",
+    "add-required-param"
+  ],
+  "cases_with_breakage": 24,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 24,
+    "fp": 0,
+    "fn": 0
+  },
+  "by_mutation": {
+    "remove-declaration": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "rename": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "add-required-param": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "results": [
+    {
+      "symbol": "pkg.format.FormatMoney",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.format.FormatMoney",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.format.FormatMoney",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.format.UpperFirst",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.format.UpperFirst",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.format.UpperFirst",
+      "kind": "function",
+      "file": "pkg/format/format.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.metrics.RecordMetric",
+      "kind": "function",
+      "file": "pkg/metrics/metrics.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.metrics.RecordMetric",
+      "kind": "function",
+      "file": "pkg/metrics/metrics.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.metrics.RecordMetric",
+      "kind": "function",
+      "file": "pkg/metrics/metrics.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.queue.Enqueue",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.queue.Enqueue",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.queue.Enqueue",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.queue.Drain",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.queue.Drain",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.queue.Drain",
+      "kind": "function",
+      "file": "pkg/queue/queue.go",
+      "cross": 2,
+      "broken_files": [
+        "pkg/service/service.go"
+      ],
+      "predicted_files": [
+        "pkg/service/service.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.service.EnqueuePayment",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.service.EnqueuePayment",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.service.EnqueuePayment",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.service.ProcessPayments",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.service.ProcessPayments",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.service.ProcessPayments",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "pkg.service.PaymentSummary",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "pkg.service.PaymentSummary",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "pkg.service.PaymentSummary",
+      "kind": "function",
+      "file": "pkg/service/service.go",
+      "cross": 1,
+      "broken_files": [
+        "pkg/api/api.go"
+      ],
+      "predicted_files": [
+        "pkg/api/api.go"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    }
+  ]
+}

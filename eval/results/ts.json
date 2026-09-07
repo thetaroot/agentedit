@@ -1,0 +1,504 @@
+{
+  "corpus": "tests/fixtures/eval_ts",
+  "cases": 25,
+  "not_applicable": 2,
+  "mutation_types": [
+    "remove-declaration",
+    "rename",
+    "add-required-param"
+  ],
+  "cases_with_breakage": 25,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 29,
+    "fp": 0,
+    "fn": 0
+  },
+  "by_mutation": {
+    "remove-declaration": {
+      "cases": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    },
+    "rename": {
+      "cases": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 11,
+      "fp": 0,
+      "fn": 0
+    },
+    "add-required-param": {
+      "cases": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "results": [
+    {
+      "symbol": "src.lib.metrics.recordMetric",
+      "kind": "function",
+      "file": "src/lib/metrics.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.lib.metrics.recordMetric",
+      "kind": "function",
+      "file": "src/lib/metrics.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.lib.metrics.recordMetric",
+      "kind": "function",
+      "file": "src/lib/metrics.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.lib.queue.Job",
+      "kind": "interface",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.lib.queue.Job",
+      "kind": "interface",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.lib.queue.Queue",
+      "kind": "class",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.lib.queue.Queue",
+      "kind": "class",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts",
+        "src/services/payments.ts"
+      ],
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.lib.queue.drainQueue",
+      "kind": "function",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.lib.queue.drainQueue",
+      "kind": "function",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.lib.queue.drainQueue",
+      "kind": "function",
+      "file": "src/lib/queue.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.services.payments.enqueuePayment",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.services.payments.enqueuePayment",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.services.payments.enqueuePayment",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.services.payments.processPayments",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.services.payments.processPayments",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.services.payments.processPayments",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.services.payments.paymentSummary",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.services.payments.paymentSummary",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.services.payments.paymentSummary",
+      "kind": "function",
+      "file": "src/services/payments.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.utils.format.formatMoney",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.utils.format.formatMoney",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.utils.format.formatMoney",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/services/payments.ts"
+      ],
+      "predicted_files": [
+        "src/services/payments.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "src.utils.format.upperFirst",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "src.utils.format.upperFirst",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "src.utils.format.upperFirst",
+      "kind": "function",
+      "file": "src/utils/format.ts",
+      "cross": 2,
+      "broken_files": [
+        "src/api/handlers.ts"
+      ],
+      "predicted_files": [
+        "src/api/handlers.ts"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    }
+  ]
+}

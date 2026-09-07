@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Impactmap artifacts
+.impactmap/
+*.db
+*.db-shm
+*.db-wal
+
+# Eval corpora / results
+eval/corpora/
+eval/results/*
+!eval/corpora/.gitkeep
+!eval/results/.gitkeep
+!eval/results/*.json
+
+# Local tooling
+.idea/
+.vscode/
+.DS_Store
+
+# Rust build artifacts in eval fixture
+/tests/fixtures/eval_rust/target/

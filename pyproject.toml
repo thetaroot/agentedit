@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentedit"
+version = "1.0.0"
+description = "A local change-intelligence layer for coding agents: know what your code change will break before you make it."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "thetaroot" }]
+keywords = ["mcp", "tree-sitter", "code-graph", "impact-analysis", "coding-agents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "tree-sitter>=0.23",
+    "tree-sitter-typescript>=0.23",
+    "tree-sitter-javascript>=0.23",
+    "tree-sitter-python>=0.23",
+    "tree-sitter-go>=0.23",
+    "tree-sitter-rust>=0.23",
+    "tree-sitter-java>=0.23",
+]
+
+[project.scripts]
+agentedit = "agentedit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/thetaroot/agentedit"
+Source = "https://github.com/thetaroot/agentedit"
+Issues = "https://github.com/thetaroot/agentedit/issues"
+SwiftGate = "https://swiftgateai.de"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.4",
+    "mypy>=1.8",
+]
+eval = ["pytest>=8.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agentedit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests", "eval"]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+# tests/fixtures contain corpus *data*, not code under type-check.
+exclude = ["tests/fixtures/"]

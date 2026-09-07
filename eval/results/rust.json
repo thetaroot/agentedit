@@ -1,0 +1,478 @@
+{
+  "corpus": "tests/fixtures/eval_rust",
+  "cases": 24,
+  "not_applicable": 0,
+  "mutation_types": [
+    "remove-declaration",
+    "rename",
+    "add-required-param"
+  ],
+  "cases_with_breakage": 24,
+  "aggregate": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "tp": 24,
+    "fp": 0,
+    "fn": 0
+  },
+  "by_mutation": {
+    "remove-declaration": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "rename": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    },
+    "add-required-param": {
+      "cases": 8,
+      "precision": 1.0,
+      "recall": 1.0,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "results": [
+    {
+      "symbol": "format.format_money",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "format.format_money",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "format.format_money",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "format.upper_first",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "format.upper_first",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "format.upper_first",
+      "kind": "function",
+      "file": "src/format.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "metrics.record_metric",
+      "kind": "function",
+      "file": "src/metrics.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "metrics.record_metric",
+      "kind": "function",
+      "file": "src/metrics.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "metrics.record_metric",
+      "kind": "function",
+      "file": "src/metrics.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "queue.enqueue",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "queue.enqueue",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "queue.enqueue",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "queue.drain",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "queue.drain",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "queue.drain",
+      "kind": "function",
+      "file": "src/queue.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/service.rs"
+      ],
+      "predicted_files": [
+        "src/service.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "service.enqueue_payment",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "service.enqueue_payment",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "service.enqueue_payment",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "service.process_payments",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "service.process_payments",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "service.process_payments",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    },
+    {
+      "symbol": "service.payment_summary",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "remove-declaration"
+    },
+    {
+      "symbol": "service.payment_summary",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "rename"
+    },
+    {
+      "symbol": "service.payment_summary",
+      "kind": "function",
+      "file": "src/service.rs",
+      "cross": 2,
+      "broken_files": [
+        "src/api.rs"
+      ],
+      "predicted_files": [
+        "src/api.rs"
+      ],
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "recall": 1.0,
+      "precision": 1.0,
+      "mutation": "add-required-param"
+    }
+  ]
+}
