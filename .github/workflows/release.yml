@@ -1,12 +1,13 @@
 name: Release
 
-# Builds a source distribution + wheel on a version tag and attaches them to
-# the GitHub Release for that tag. Install commands are published in the README
-# (pipx/uv from the release-asset URL, or `pip install git+...@tag`).
+# On a version tag: build sdist + wheel, attach them to the GitHub Release for
+# that tag, and publish the same artifacts to PyPI under the distribution name
+# `agentedit`. PyPI is authenticated with the repository secret
+# PYPI_API_TOKEN (a project-scoped API token for agentedit); it never appears
+# in files or logs.
 #
-# No PyPI publishing: the `impactmap` name on PyPI belongs to an unrelated
-# project, and releases are distributed from GitHub. PyPI is used only for the
-# tree-sitter language wheels that ship as regular dependencies.
+# `skip-existing: true` keeps the pipeline green when a tag is re-pushed for an
+# already-published version (PyPI files are immutable).
 
 on:
   push:
@@ -17,7 +18,7 @@ permissions:
   contents: write
 
 jobs:
-  build-and-attach:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,9 +33,15 @@ jobs:
         run: |
           python -m venv /tmp/verify
           /tmp/verify/bin/pip install dist/*.whl
-          /tmp/verify/bin/impactmap --version
+          /tmp/verify/bin/agentedit --version
       - name: Attach artifacts to the GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: dist/*
           generate_release_notes: true
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_API_TOKEN }}
+          packages-dir: dist
+          skip-existing: true
