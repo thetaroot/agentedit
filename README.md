@@ -1,8 +1,7 @@
 # AgentEdit
 
 ```bash
-pipx install "https://github.com/thetaroot/agentedit/releases/download/v1.0.0/agentedit-1.0.0-py3-none-any.whl"
-# or: pip install "git+https://github.com/thetaroot/agentedit@v1.0.0"
+uv tool install agentedit        # or: pipx install agentedit
 ```
 
 Deterministic, local impact analysis for coding agents: **know what your code
@@ -13,6 +12,10 @@ agentedit index .                          # build the local code graph
 agentedit impact src.auth.authenticate     # who depends on it?
 agentedit audit src.auth.authenticate      # one-call crash-audit before an edit
 ```
+
+Published on [PyPI](https://pypi.org/project/agentedit/) (also available as a
+wheel on [GitHub Releases](https://github.com/thetaroot/agentedit/releases)).
+Python ≥ 3.11.
 
 ## What it does
 
